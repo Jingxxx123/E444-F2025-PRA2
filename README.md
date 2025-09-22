@@ -22,5 +22,8 @@
 - Incorrect email address.      
   ![failed_email Screenshot](examples/failed_email.png)  
 - Incorrect UofT  email address.      
-  ![failed_UofT_email Screenshot](examples/failed_UofT_email.png) 
+  ![failed_UofT_email Screenshot](examples/failed_UofT_email.png)  
 
+## Docker 
+- The log information.  
+    ![docker Screenshot](examples/docker.png)  

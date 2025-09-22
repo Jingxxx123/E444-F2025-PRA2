@@ -1,1 +1,5 @@
-
+Flask
+flask-wtf
+flask-moment
+email-validator
+Flask-Bootstrap
