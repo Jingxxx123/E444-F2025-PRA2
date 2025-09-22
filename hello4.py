@@ -34,10 +34,9 @@ def internal_server_error(e):
 @app.route('/index', methods=['GET', 'POST']) 
 def index(): 
     form = NameEmailForm() 
-    name = None
-    email = None
-    msg = None           
+    email = None         
     is_uoft = None
+    name = None
     
     if form.validate_on_submit():
 
@@ -55,8 +54,8 @@ def index():
         session['email'] = form.email.data
         session['is_uoft'] = is_uoft
 
-    
-    return render_template('index.html', form=form, name=session.get('name'), email=session.get('email'), is_uoft=is_uoft, current_time=datetime.utcnow())
+
+    return render_template('index.html', form=form, name=name, email=email, is_uoft=is_uoft, current_time=datetime.utcnow())
 
 if __name__ == '__main__':
     app.run(debug=True)
